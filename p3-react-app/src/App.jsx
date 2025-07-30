@@ -13,9 +13,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<Home />} index/>
-        <Route element={<Today />} path='today' />
-        <Route element={<Log />} path='log/:id' />
-        <Route element={<PastLogs />} path='pastlogs' />
+        <Route element={<Log />} path='log' />
+        {/* <Route element={<Today />} path='today' />
+        <Route element={<PastLogs />} path='pastlogs' /> */}
         <Route element={<WhyLog />} path='whylog' />
         <Route element={<PageNotFound />} path='*'/>
       </Routes>

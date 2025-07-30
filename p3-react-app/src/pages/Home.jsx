@@ -5,7 +5,7 @@ function Home() {
   return (  
     <>
       <Header title='LogLife' text='Daily notes that make a life'/>
-      <Link to='/today'>Begin Logging</Link>
+      <Link to='/log'>Begin Logging</Link>
     </>
   );
 }
