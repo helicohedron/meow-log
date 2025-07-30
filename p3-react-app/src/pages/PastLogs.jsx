@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 function PastLogs() {
   return (  
     <>
-      <h1>Past Logs</h1>
+      <Header title='Past Logs' />
     </>
   );
 }

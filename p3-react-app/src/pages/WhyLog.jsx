@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 function WhyLog() {
   return (  
     <>
-      <h1>Why Log?</h1>
+      <Header title='Why Log?' />
     </>
   );
 }

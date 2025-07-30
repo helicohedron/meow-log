@@ -1,7 +1,11 @@
+import Header from '../components/Header';
+import { Link } from 'react-router';
+
 function Home() {
   return (  
     <>
-      <h1>Home</h1>
+      <Header title='LogLife' text='Daily notes that make a life'/>
+      <Link to='/today'>Begin Logging</Link>
     </>
   );
 }

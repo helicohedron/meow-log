@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 function Log() {
   return (  
     <>
-      <h1>Log</h1>
+      <Header title='Log' />
     </>
   );
 }
