@@ -5,7 +5,6 @@ import { useState, useEffect } from 'react';
 
 
 function Log() {
-  // const [log, setLog] = useState('');
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
@@ -15,8 +14,7 @@ function Log() {
     }
   }, []);
 
-  // add delete option
-  
+
   return (  
     <div>
       <Header title='Daily Log' />

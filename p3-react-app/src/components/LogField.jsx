@@ -21,7 +21,7 @@ function LogField( { logs, setLogs }) {
           maxLength={150} 
           value={log}
           onChange={(e) => setLog(e.target.value)}
-        />
+        /><br />
         <input type='submit' value='Save'></input>
       </form>
    </div>
