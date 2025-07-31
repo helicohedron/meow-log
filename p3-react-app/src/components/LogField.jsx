@@ -1,25 +1,26 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-function LogField() {
+function LogField( { logs, setLogs }) {
+
   const [log, setLog] = useState('');
 
-  useEffect(() => {
-    localStorage.setItem('log', log);
-    localStorage.setItem('date', new Date());
-  }, [log]);
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLogs([...logs, log]);
+    localStorage.setItem('logEntry', JSON.stringify([...logs, log]));
+  }
 
   return (  
    <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <textarea 
+          type='text'
           placeholder='What did you notice today?'
           rows={5}
           cols={50}
           maxLength={150} 
           value={log}
           onChange={(e) => setLog(e.target.value)}
-          aria-label='Daily log'
         />
         <input type='submit' value='Save'></input>
       </form>

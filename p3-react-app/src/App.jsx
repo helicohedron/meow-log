@@ -1,10 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router';
-import Home from './pages/Home';
-import Today from './pages/Today';
-import Log from './pages/Log';
-import PastLogs from './pages/PastLogs';
-import WhyLog from './pages/WhyLog';
-import PageNotFound from './pages/PageNotFound';
+import HomePage from './pages/HomePage';
+import LogPage from './pages/LogPage';
+import WhyLogPage from './pages/WhyLogPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 
 
@@ -12,12 +10,10 @@ function App() {
   return (  
     <BrowserRouter>
       <Routes>
-        <Route element={<Home />} index/>
-        <Route element={<Log />} path='log' />
-        {/* <Route element={<Today />} path='today' />
-        <Route element={<PastLogs />} path='pastlogs' /> */}
-        <Route element={<WhyLog />} path='whylog' />
-        <Route element={<PageNotFound />} path='*'/>
+        <Route element={<HomePage />} index/>
+        <Route element={<LogPage />} path='log' />
+        <Route element={<WhyLogPage />} path='whylog' />
+        <Route element={<NotFoundPage />} path='*'/>
       </Routes>
     </BrowserRouter>
   );
