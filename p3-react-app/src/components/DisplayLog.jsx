@@ -1,3 +1,4 @@
+import BtnCattify from './BtnCattify';
 import BtnDelete from './BtnDelete'
 
 const date = new Date();
@@ -11,6 +12,7 @@ function DisplayLog({logs, setLogs}) {
           <p>{displayDate}</p>
           <p>{log.text}</p>
           <BtnDelete id={log.id} logs={logs} setLogs={setLogs}/>
+          <BtnCattify text={log.text} alt='A cat with text.'/>
         </div>
       )) : 'You have no logs at the moment.'}
     </div>

@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 function Home() {
   return (  
     <>
-      <Header title='LogLife' text='Daily notes that make a life'/>
+      <Header title='Gratitude Log' text='Daily gratitude notes for happiness'/>
       <Link to='/log'>Begin Logging</Link>
     </>
   );

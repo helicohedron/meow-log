@@ -20,10 +20,10 @@ function LogField( { logs, setLogs }) {
       <form onSubmit={handleSubmit}> 
         <textarea 
           type='text'
-          placeholder='What did you notice today?'
+          placeholder='What is one thing that made you happy today?'
           rows={5}
           cols={50}
-          maxLength={150} 
+          maxLength={30} 
           value={log}
           onChange={(e) => setLog(e.target.value)}
         /><br />

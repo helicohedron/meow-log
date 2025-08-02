@@ -17,7 +17,7 @@ function Log() {
 
   return (  
     <div>
-      <Header title='Daily Log' />
+      <Header title='Gratitude Log' />
       <LogField logs={logs} setLogs={setLogs}/>
       <DisplayLog logs={logs} setLogs={setLogs}/>
     </div>

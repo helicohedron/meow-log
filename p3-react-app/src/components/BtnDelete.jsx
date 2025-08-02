@@ -7,7 +7,7 @@ function BtnDelete ({ id, logs, setLogs }) {
   }
   
   return (  
-    <button onClick={handleClick}>Delete</button>
+    <button onClick={handleClick}>Delete Log</button>
   );
 }
 
