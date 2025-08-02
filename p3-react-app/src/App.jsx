@@ -5,7 +5,6 @@ import WhyLogPage from './pages/WhyLogPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 
-
 function App() {
   return (  
     <BrowserRouter>

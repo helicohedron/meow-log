@@ -6,13 +6,18 @@ function LogField( { logs, setLogs }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setLogs([...logs, log]);
-    localStorage.setItem('logEntry', JSON.stringify([...logs, log]));
+
+    const newLog = { id: Date.now(), text: log };
+    const updatedLogs = [ ...logs, newLog ];
+
+    setLogs(updatedLogs);
+    localStorage.setItem('LogEntries', JSON.stringify(updatedLogs));
+    setLog('');
   }
 
   return (  
    <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}> 
         <textarea 
           type='text'
           placeholder='What did you notice today?'

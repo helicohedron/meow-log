@@ -8,7 +8,7 @@ function Log() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
-    const storedLogs = localStorage.getItem('logEntry'); //fetch
+    const storedLogs = localStorage.getItem('LogEntries'); //fetch
     if (storedLogs) {
       setLogs(JSON.parse(storedLogs)); 
     }
@@ -19,7 +19,7 @@ function Log() {
     <div>
       <Header title='Daily Log' />
       <LogField logs={logs} setLogs={setLogs}/>
-      <DisplayLog logs={logs}/>
+      <DisplayLog logs={logs} setLogs={setLogs}/>
     </div>
   );
 }
