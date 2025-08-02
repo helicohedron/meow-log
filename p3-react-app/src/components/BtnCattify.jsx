@@ -21,10 +21,10 @@ function BtnCattify( { text } ) {
   
   return (  
     <>
-      <button onClick={handleClick}>Cattify</button>
+      <button onClick={handleClick} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm'>Cattify</button>
       {cat && (
         <>
-          <button onClick={handleRemove}>Remove Cat</button>
+          <button onClick={handleRemove} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm'>Remove Cat</button>
           <img src={cat}/>
         </>
       )}

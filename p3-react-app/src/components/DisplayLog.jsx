@@ -7,13 +7,13 @@ const [ dayWeek, month, day, year ] = displayDate.split(' ');
 
 function DisplayLog({logs, setLogs}) {
   return (  
-    <div className='flex flex-col items-center border-1 mt-5'>
+    <div className='flex flex-col items-center mt-5 mb-10 gap-5'>
       {logs.length > 0 ? logs.map((log) => (
-        <div key={log.id} className='border-2 min-w-1/2 max-w-3/4 p-5'>
-          <div className='text-[var(--color-burntOrange)]'>
+        <div key={log.id} className='min-w-1/2 max-w-3/4 p-5 bg-[var(--color-brightBlue)]'>
+          <div className='text-[var(--color-yellowGray)] text-sm'>
             <p>{dayWeek} | {month} {day}, {year}</p>
           </div>
-          <div>
+          <div className='text-[var(--color-offWhite)] pt-5 pb-5'>
             <p>{log.text}</p>
           </div>
           <div>

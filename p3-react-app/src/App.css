@@ -1,12 +1,13 @@
 @import 'tailwindcss';
 
-:root {
+/* :root {
   --font-body: Cabin, sans-serif;
   --color-burntOrange: #ca7842;
   --color-offWhite: #f5eedc;
   --color-brightBlue: #27548a;
   --color-darkBlue: #183b4e;
-}
+  --color-yellowGray: #dfdbd0;
+} */
 
 /* #root {
   max-width: 1280px;
