@@ -16,10 +16,18 @@ function Log() {
 
 
   return (  
-    <div>
-      <Header title='Gratitude Log' />
-      <LogField logs={logs} setLogs={setLogs}/>
-      <DisplayLog logs={logs} setLogs={setLogs}/>
+    <div className='bg-[var(--color-offWhite)] min-h-screen'>
+      <div className='flex flex-col'>
+        <div>
+          <Header title='Gratitude Log' />
+        </div>
+        <div>
+          <LogField logs={logs} setLogs={setLogs}/>
+        </div>
+        <div className='border-2'>
+          <DisplayLog logs={logs} setLogs={setLogs}/>
+        </div>
+      </div>
     </div>
   );
 }
