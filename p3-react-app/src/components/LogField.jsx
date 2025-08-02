@@ -23,7 +23,7 @@ function LogField( { logs, setLogs }) {
           placeholder='What is one thing that made you happy today?'
           rows={5}
           cols={50}
-          maxLength={30} 
+          maxLength={35} 
           value={log}
           onChange={(e) => setLog(e.target.value)}
         /><br />

@@ -3,10 +3,16 @@ import { Link } from 'react-router';
 
 function Home() {
   return (  
-    <>
-      <Header title='Gratitude Log' text='Daily gratitude notes for happiness'/>
-      <Link to='/log'>Begin Logging</Link>
-    </>
+    <div className='bg-[var(--color-offWhite)] min-h-screen'>
+      <div className='flex flex-col gap-10' >
+        <div>
+          <Header title='Meow Log' text='Daily gratitude notes for happiness, with cats.'/>
+        </div>
+        <div className='flex justify-center'>
+          <Link to='/log' className='bg-[var(--color-burntOrange)] text-[var(--color-offWhite)] p-6 pt-4 pb-4 rounded-lg'>Begin Logging</Link>
+        </div>
+      </div>
+    </div>
   );
 }
 

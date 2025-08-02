@@ -1,4 +1,14 @@
-#root {
+@import 'tailwindcss';
+
+:root {
+  --font-body: Cabin, sans-serif;
+  --color-burntOrange: #ca7842;
+  --color-offWhite: #f5eedc;
+  --color-brightBlue: #27548a;
+  --color-darkBlue: #183b4e;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +49,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
