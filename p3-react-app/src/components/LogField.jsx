@@ -7,6 +7,11 @@ function LogField( { logs, setLogs }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!log) {
+      alert('Please enter a log.');
+      throw Error;
+    }
+
     const newLog = { id: Date.now(), text: log };
     const updatedLogs = [ ...logs, newLog ];
 

@@ -19,12 +19,12 @@ function Log() {
     <div className='bg-[var(--color-offWhite)] min-h-screen'>
       <div className='flex flex-col'>
         <div>
-          <Header title='Gratitude Log' />
+          <Header title='Meow Log' />
         </div>
         <div>
           <LogField logs={logs} setLogs={setLogs}/>
         </div>
-        <div className='border-2'>
+        <div>
           <DisplayLog logs={logs} setLogs={setLogs}/>
         </div>
       </div>
