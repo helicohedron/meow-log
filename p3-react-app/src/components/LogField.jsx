@@ -26,10 +26,10 @@ function LogField( { logs, setLogs }) {
         <div className='flex justify-center'>
           <div>
             <textarea 
-              placeholder='What is one thing that made you happy today?'
+              placeholder='What one thing made you happy today?'
               rows={1}
-              cols={50}
-              maxLength={35} 
+              cols={35}
+              maxLength={40} 
               value={log}
               onChange={(e) => setLog(e.target.value)}
               style={{resize: 'none'}}
