@@ -27,10 +27,10 @@ function BtnCattify( { text } ) {
   
   return (  
     <>
-      <button onClick={handleClick} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm'>Cattify</button>
+      <button onClick={handleClick} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm hover:bg-[var(--color-offWhite)] hover:text-[var(--color-burntOrange)]'>Cattify</button>
       {cat && (
         <>
-          <button onClick={handleRemove} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm'>Remove Cat</button>
+          <button onClick={handleRemove} className='bg-[var(--color-burntOrange)] p-2 m-2 text-[var(--color-offWhite)] rounded-md text-sm hover:bg-[var(--color-offWhite)] hover:text-[var(--color-burntOrange)]'>Remove Cat</button>
           {loading && <div className='text-[var(--color-yellowGray)] text-sm mt-2'>Chasing cat...</div>}
           <img src={cat}/>
         </>

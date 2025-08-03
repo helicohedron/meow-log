@@ -1,5 +1,5 @@
 export async function cattify({text}) {
-  const URL = `https://cataas.com/cat/says/${text}?width=1000&json=true`;
+  const URL = `https://cataas.com/cat/says/${text}?width=800&json=true`;
 
   try {
     const response = await fetch(URL);

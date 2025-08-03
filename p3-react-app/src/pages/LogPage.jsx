@@ -8,7 +8,7 @@ function Log() {
   const [logs, setLogs] = useState([]);
 
   useEffect(() => {
-    const storedLogs = localStorage.getItem('LogEntries'); //fetch
+    const storedLogs = localStorage.getItem('LogEntries');
     if (storedLogs) {
       setLogs(JSON.parse(storedLogs)); 
     }
@@ -16,7 +16,7 @@ function Log() {
 
 
   return (  
-    <div className='bg-[var(--color-offWhite)] min-h-screen'>
+    <div className='bg-[var(--color-offWhite)] min-h-screen min-w-screen'>
       <div className='flex flex-col'>
         <div>
           <Header title='Meow Log' />
