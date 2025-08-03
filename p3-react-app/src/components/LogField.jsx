@@ -12,7 +12,11 @@ function LogField( { logs, setLogs }) {
       throw Error;
     }
 
-    const newLog = { id: Date.now(), text: log };
+    const date = new Date();
+    const displayDate = date.toDateString();
+    const [ dayWeek, month, day, year ] = displayDate.split(' ');
+    
+    const newLog = { id: Date.now(), dayWeek: dayWeek, month: month, day: day, year: year, text: log };
     const updatedLogs = [ ...logs, newLog ];
 
     setLogs(updatedLogs);

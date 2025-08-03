@@ -7,7 +7,7 @@ function BtnDelete ({ id, logs, setLogs }) {
   }
   
   return (  
-    <button onClick={handleClick} className='border-1 border-[var(--color-burntOrange)] p-2 mr-2 text-[var(--color-offWhite)] rounded-md text-sm'>Delete Log</button>
+    <button onClick={handleClick} className='border-1 border-[var(--color-burntOrange)] p-2 mr-2 text-[var(--color-offWhite)] rounded-md text-sm border-dotted'>Delete Log</button>
   );
 }
 
