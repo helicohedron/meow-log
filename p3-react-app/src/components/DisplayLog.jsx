@@ -9,7 +9,7 @@ function DisplayLog({logs, setLogs}) {
       {logs.length > 0 ? logs.map((log) => (
         <div key={log.id} className='min-w-1/2 max-w-3/4 p-5 bg-[var(--color-brightBlue)] rounded-lg'>
           <div className='text-[var(--color-yellowGray)] text-sm'>
-            <p>{log.dayWeek} | {log.month} {log.day}, {log.year}</p>
+            <p>{log.dayWeek}, {log.time} | {log.month} {log.day}, {log.year}</p>
           </div>
           <div className='text-[var(--color-offWhite)] pt-5 pb-5'>
             <p>{log.text}</p>
