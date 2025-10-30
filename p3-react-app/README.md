@@ -1,12 +1,49 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h4 align="center">A daily gratitude app that allows you to turn your short, gratitude logs into cat memes.</h4>
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Key Features
 
-## Expanding the ESLint configuration
+* Daily Log
+  - Type, save, and delete daily gratitude logs.
+* Cattify your logs
+  - Turn your logs into cat memes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## How To Use
+
+To clone and run this application, you'll need [React Vite](https://vite.dev/guide/) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)), and [React DOM](https://www.npmjs.com/package/react-dom) installed on your computer. From your command line:
+
+```bash
+# Clone this repository
+$ git clone https://github.com/helicohedron/meow-log.git
+
+# Go into the repository
+$ cd p3-react-app
+
+# Install dependencies
+$ npm install 
+
+# Run the app
+$ npm run dev
+```
+
+
+## Credits
+
+This software uses the following API:
+
+- [Cat as a service](https://cataas.com/)
+
+## Related
+
+[Try Web version of Meow Log](https://meowlog.onrender.com/)
+
+
+## License
+
+MIT
+
+---
+
+> GitHub [@helicohedron](https://github.com/helicohedron) &nbsp;&middot;&nbsp;
+
