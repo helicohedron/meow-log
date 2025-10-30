@@ -18,7 +18,7 @@ To clone and run this application, you'll need [React Vite](https://vite.dev/gui
 $ git clone https://github.com/helicohedron/meow-log.git
 
 # Go into the repository
-$ cd p3-react-app
+$ cd meow-log
 
 # Install dependencies
 $ npm install 
